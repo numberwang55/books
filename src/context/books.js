@@ -12,7 +12,7 @@ function Provider({children}) {
         }
     }
 
-    return <BooksContext.Provider value={valueToShare}></BooksContext.Provider>
+    return <BooksContext.Provider value={valueToShare}>{children}</BooksContext.Provider>
 }
 
 export default BooksContext;
